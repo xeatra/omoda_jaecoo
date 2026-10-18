@@ -1,0 +1,41 @@
+/* =====================================================================
+   OMODA & JAECOO — Design tokens (Sales Partner Dealer WebKit)
+   Layout concept: gallery-white canvas, cars on soft studio "stages",
+   black pill actions, each brand keeps one quiet accent of its own.
+   ===================================================================== */
+:root {
+  --bg:        #FFFFFF;
+  --bg-2:      #F3F4F5;   /* studio stage */
+  --bg-3:      #E9EBED;
+  --ink:       #0F1113;   /* text + primary buttons */
+  --ink-2:     #33373C;
+  --mute:      #737880;
+  --line:      #E2E4E7;
+  --night:     #0C0D0F;   /* dark bands */
+  --night-2:   #17191C;
+  --on-night:  #F2F3F4;
+  --omoda:     #B3202A;   /* OMODA accent — signal red */
+  --jaecoo:    #2E6B5E;   /* JAECOO accent — forest green */
+  --accent:    var(--ink);
+  --ok:        #1F8A5B;
+  --warn:      #B7791F;
+  --err:       #C2362F;
+
+  --f-display: 'Red Hat Display', 'Segoe UI', Roboto, Arial, sans-serif;
+  --f-body:    'Red Hat Text', 'Segoe UI', Roboto, Arial, sans-serif;
+  --f-mono:    'Red Hat Mono', ui-monospace, Menlo, Consolas, monospace;
+
+  --fs-xs: .75rem; --fs-sm: .875rem; --fs-md: 1rem; --fs-lg: 1.125rem;
+  --fs-xl: clamp(1.25rem, 1.1rem + .5vw, 1.5rem);
+  --fs-h3: clamp(1.4rem, 1.2rem + .9vw, 1.9rem);
+  --fs-h2: clamp(1.9rem, 1.4rem + 2vw, 3rem);
+  --fs-h1: clamp(2.4rem, 1.6rem + 3.6vw, 4.6rem);
+
+  --r-sm: 8px; --r-md: 14px; --r-lg: 22px; --r-pill: 999px;
+  --container: 1280px; --header-h: 72px;
+  --shadow: 0 1px 2px rgba(15,17,19,.04), 0 12px 32px -12px rgba(15,17,19,.14);
+  --ease: cubic-bezier(.2,.7,.2,1);
+  color-scheme: light;
+}
+[data-brand="omoda"]  { --accent: var(--omoda); }
+[data-brand="jaecoo"] { --accent: var(--jaecoo); }
